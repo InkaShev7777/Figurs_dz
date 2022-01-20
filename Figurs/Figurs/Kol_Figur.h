@@ -30,6 +30,7 @@ public:
 		}
 		else
 		{
+
 			tmp = new Node;
 			tmp->name = figura;
 			tmp->next = nullptr;
