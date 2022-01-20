@@ -18,5 +18,37 @@
     <ClCompile Include="Figurs.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Kol_Figur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Figura.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Krug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Kvadrat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Romb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Kol_Figur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Figura.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Krug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Kvadrat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Romb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

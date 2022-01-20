@@ -139,7 +139,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Figura.cpp" />
     <ClCompile Include="Figurs.cpp" />
+    <ClCompile Include="Kol_Figur.cpp" />
+    <ClCompile Include="Krug.cpp" />
+    <ClCompile Include="Kvadrat.cpp" />
+    <ClCompile Include="Romb.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Figura.h" />
+    <ClInclude Include="Kol_Figur.h" />
+    <ClInclude Include="Krug.h" />
+    <ClInclude Include="Kvadrat.h" />
+    <ClInclude Include="Romb.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
