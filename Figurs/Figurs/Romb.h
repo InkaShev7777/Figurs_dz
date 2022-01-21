@@ -13,10 +13,10 @@ public:
 		this->y = 8;
 		this->name = "Romb";
 	}
-	void print()
+	virtual void print()
 	{
-		this->Print_Baz();
-		std::cout << this->st;
+		Figura::print();
+		std::cout <<"Storona: "<< this->st << "\tName: " << this->name << "\t";
 	}
 };
 

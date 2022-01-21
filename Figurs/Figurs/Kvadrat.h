@@ -13,10 +13,10 @@ public:
 		this->y = 4;
 		this->name = "Kvadrat";
 	}
-	void print()
+	virtual void print()
 	{
-		this->Print_Baz();
-		std::cout << this->size;
+		Figura::print();
+		std::cout <<"Storona: "<< this->size << "\tName: " << this->name << "\t";
 	}
 };
 

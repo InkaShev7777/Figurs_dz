@@ -5,7 +5,13 @@
 struct Node
 {
 	Node* next;
-	Figura name;	
+	Figura* name;	
+	Node(){}
+	Node(Figura* figura,Node* next)
+	{
+		this->name = figura;
+		this->next = NULL;
+	}
 };
 class Kol_Figur
 {
@@ -15,37 +21,33 @@ public:
 	{
 		this->head = nullptr;
 	}
-	void Add(Figura figura)
+	void Add(Figura* figura)
 	{
-		Node* tmp = this->head;
-		if (tmp != nullptr)
+		if (this->head == nullptr)
 		{
-			while (tmp->next !=nullptr)
-			{
-				tmp = tmp->next;
-			}
-			tmp->next = new Node;
-			tmp->next->name = figura;
-			tmp->next->next = nullptr;
+			this->head = new Node(figura, nullptr);
 		}
 		else
 		{
-
-			tmp = new Node;
-			tmp->name = figura;
-			tmp->next = nullptr;
-			this->head = tmp;
+			Node* tmp = this->head;
+			while (tmp->next != nullptr)
+			{
+				tmp = tmp->next;
+			}
+			tmp->next = new  Node(figura, nullptr);
 		}
 	}
-	void Print()
+	virtual void Show()
 	{
 		Node* tmp = this->head;
 		while (tmp != nullptr)
 		{
-			std::cout <<tmp<<" Next: "<<tmp->next<<" "<<tmp->name<<"\n";
+			std::cout << "This address: " << tmp << "\t";
+			tmp->name->print();
+			std::cout << "Next address: " << tmp->next << "\t";
+			std::cout << "\n";
 			tmp = tmp->next;
 		}
 	}
-
 };
 

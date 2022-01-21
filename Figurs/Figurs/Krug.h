@@ -13,16 +13,10 @@ public:
 		this->y = 2;
 		this->name = "Krug";
 	}
-	/*friend std::ostream& operator<<(std::ostream& out, Krug& krug)
+	virtual void print()
 	{
-		out << "Cord X: " << krug.x << "  Cord Y: " << krug.y << "  Rad: " << krug.rad;
-		return out;
-	}*/
-	void print()
-	{
-		this->Print_Baz();
-		std::cout << this->rad;
+		Figura::print();
+		std::cout <<"Radius: "<< this->rad<<"\tName: "<<this->name<<"\t";
 	}
-
 };
 
